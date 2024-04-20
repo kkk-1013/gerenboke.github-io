@@ -1,0 +1,102 @@
+*{
+    margin : 0;
+    padding:0;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family:'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style:none;
+}
+.header{
+    display: flex;
+    justify-content :space-between;
+    width: 100%;
+    height: 10%;
+    background: black;
+    box-sizing: 2px 3px 5px #ccc;
+}
+.logo{
+    position: relative;
+    height: 100%;
+}
+.logo h3{
+    position: absolute;
+    width: 200px;
+    top:30px;
+    left: 30px;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.logo h3 a{
+    color:white;
+}
+.logo h3 a:hover{
+    color:pink
+}
+.nav ul{
+    display:flex;
+    justify-content:start;
+}
+.nav ul li{
+    width:auto;
+    margin: 30px 40px;
+}
+.nav ul li a{
+    font-size:20px;
+    color:aliceblue
+}
+.nav ul li a:hover{
+    color:pink
+}
+.nav ul .active a{
+    color:pink
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height: 90%;
+    background: greenyellow;
+}
+.left-box{
+    position: relative;
+    width: 15%;
+    height: 100%;
+    
+}
+.left-box-f{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:98%;
+    background:#ccc;
+}
+.left-f-top-img{
+    width:200px;
+    height:120px;
+    margin: 20px auto;
+}
+.left-f-top-img img{
+    display: block;
+    width:100%;
+    height:100%;
+    border-radius: 10%;
+    object-fit: cover;
+}
+.left-f-top-text{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.right-box{
+    width: 80%;
+    height:100%;
+    background: gainsboro;
+}
