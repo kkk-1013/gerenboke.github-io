@@ -1,61 +1,83 @@
 *{
+    list-style: none;
     margin : 0;
     padding:0;
+    text-decoration: none;
+}
+@font-face{
+    font-family: '优设标题黑';
+    src: url('1.ttf');
 }
 body,html{
     width: 100%;
-    height: 100%;
-    font-family:'Times New Roman', Times, serif;
+    height: 100vh;
+    justify-content: center;
 }
-a{
-    text-decoration: none;
-}
-li{
-    list-style:none;
-}
-.header{
+.nav{
     display: flex;
-    justify-content :space-between;
+    justify-content :center;
     width: 100%;
     height: 10%;
-    background: black;
-    box-sizing: 2px 3px 5px #ccc;
-}
-.logo{
     position: relative;
-    height: 100%;
-}
-.logo h3{
-    position: absolute;
-    width: 200px;
-    top:30px;
-    left: 30px;
-    letter-spacing: 2px;
-    font-size: 20px;
-}
-.logo h3 a{
-    color:white;
-}
-.logo h3 a:hover{
-    color:pink
+    background: #fff;
+    top: 0;
+    box-shadow: 0 5 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-image: url('20240421210107.gif'); /* 替换为你的动图路径 */  
+    background-size: cover; /* 根据需要调整背景图像的大小 */   
+    background-repeat: no-repeat; /* 防止背景图像重复 */ 
 }
 .nav ul{
-    display:flex;
-    justify-content:start;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    right:5%;
+}
+.nav-box{
+    position:absolute;
+    bottom:0;
+    left: 0;
+    width: calc((100%/6)*1);
+    height:10px;
+    border-radius: 2px;
+    transition: .5s;
 }
 .nav ul li{
-    width:auto;
-    margin: 30px 40px;
+    width:100%;
+    text-align: center;
 }
 .nav ul li a{
-    font-size:20px;
-    color:aliceblue
+    color:rgba(70 100 180);
+    font: 300 30px '优设标题黑';
+    display: block;
+    width:100%;
+    height:100px;
+    line-height: 100px;
 }
-.nav ul li a:hover{
-    color:pink
+.nav ul li h3{
+    color:white;
+    font: 300 40px '优设标题黑';
+    display: block;
+    width:100%;
+    height:100px;
+    line-height: 100px;
 }
-.nav ul .active a{
-    color:pink
+.nav ul li:nth-child(2):hover~.nav-box{
+    left:calc(100%/6*1);
+    background-color: red;
+}.nav ul li:nth-child(3):hover~.nav-box{
+    left:calc(100%/6*2);
+    background-color: #d17df8;
+}.nav ul li:nth-child(4):hover~.nav-box{
+    left:calc(100%/6*3);
+    background-color: #ffb1b1;
+}.nav ul li:nth-child(5):hover~.nav-box{
+    left:calc(100%/6*4);
+    background-color: #8da1f8;
+}.nav ul li:nth-child(6):hover~.nav-box{
+    left:calc(100%/6*5);
+    background-color: #7df88e;
 }
 .box{
     display: flex;
